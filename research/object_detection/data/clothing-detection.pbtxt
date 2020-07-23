@@ -1,0 +1,14 @@
+item {
+  id: 1
+  name: 'upper-body clothes'
+}
+
+item {
+  id: 2
+  name: 'lower-body clothes'
+}
+
+item {
+  id: 3
+  name: 'full-body clothes'
+}
