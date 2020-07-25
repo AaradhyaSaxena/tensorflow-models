@@ -70,7 +70,7 @@ STANDARD_COLORS = [
     'WhiteSmoke', 'Yellow', 'YellowGreen'
 ]
 
-def extract_faces_from_image_array(
+def extract_clothes_from_image_array(
     image,boxes,classes,scores,category_index,instance_masks=None,
     instance_boundaries=None,
     keypoints=None,

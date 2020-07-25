@@ -17,7 +17,7 @@ def show_pair(idx1, idx2):
     plt.subplot(122)
     plt.imshow(load_image(metadata[idx2].image_path()))
     
-def extract_face(image, bbox):
+def extract_cloth(image, bbox):
     max_area = 0
     image_np = load_image_into_numpy_array(image)
     h,w,_ = image_np.shape
@@ -34,7 +34,7 @@ def extract_face(image, bbox):
             image_ = image_np[ymin:ymax,xmin:xmax]
     return image_
 
-def extract_faces(image_np, bbox):
+def extract_clothes(image_np, bbox):
     faces = []
     h,w,_ = image_np.shape
     for i in range(bbox.shape[0]):
