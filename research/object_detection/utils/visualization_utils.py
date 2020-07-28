@@ -70,7 +70,7 @@ STANDARD_COLORS = [
     'WhiteSmoke', 'Yellow', 'YellowGreen'
 ]
 
-def extract_clothes_from_image_array(
+def extract_people_from_image_array(
     image,boxes,classes,scores,category_index,instance_masks=None,
     instance_boundaries=None,
     keypoints=None,
@@ -150,7 +150,7 @@ def extract_clothes_from_image_array(
         faces_mat.append(box)
     ## print(count)
     
-    return faces_mat
+    return np.array(faces_mat)
 
 
 
